@@ -71,7 +71,7 @@ public:
 
 
   virtual void NbForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx) = 0;
-//jump to rrc 600+
+
 
   /**
    * \brief Tell the RRC entity to enter Connected mode.
@@ -160,7 +160,7 @@ public:
   virtual void SetCsgWhiteList (uint32_t csgId);
   virtual void StartCellSelection (uint16_t dlEarfcn);
   virtual void ForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn);
-  virtual void NbForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx,Ptr<NetDevice> ueDevice);
+  virtual void NbForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx);
 
   virtual void Connect (void);
   virtual void SendData (Ptr<Packet> packet, uint8_t bid);
@@ -207,10 +207,9 @@ MemberLteAsSapProvider<C>::ForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn)
 
 template <class C>
 void
-MemberLteAsSapProvider<C>::NbForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx,Ptr<NetDevice> ueDevice)
+MemberLteAsSapProvider<C>::NbForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx)
 {
-  m_owner->NbDoForceCampedOnEnb (cellId, dlEarfcn,indexx,ueDevice);
-  // jump to 657 in lte-ue-rrc.cc
+  m_owner->NbDoForceCampedOnEnb (cellId, dlEarfcn,indexx);
 }
 
 

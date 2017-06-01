@@ -230,14 +230,6 @@ protected:
    * attribute `DlSpectrumPhy` in the child classes LteEnbPhy and LteUePhy.
    */
   Ptr<LteSpectrumPhy> m_downlinkSpectrumPhy;
-
-
-
-
-
-
-
-
   /**
    * The uplink LteSpectrumPhy associated to this LtePhy. Also available as
    * attribute `UlSpectrumPhy` in the child classes LteEnbPhy and LteUePhy.

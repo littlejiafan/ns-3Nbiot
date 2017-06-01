@@ -71,6 +71,8 @@ public:
 
   Ptr<EpcUeNas> GetNas (void) const;
 
+  Ptr<LteControlMessage> GetCtrMsg(void) const;
+
   uint64_t GetImsi () const;
 
   /**
@@ -146,7 +148,7 @@ private:
   Ptr<LteUePhy> m_phy;
   Ptr<LteUeRrc> m_rrc;
   Ptr<EpcUeNas> m_nas;
-
+  Ptr<LteControlMessage> lalala;
   uint64_t m_imsi;
 
   uint16_t m_dlEarfcn; /**< downlink carrier frequency */

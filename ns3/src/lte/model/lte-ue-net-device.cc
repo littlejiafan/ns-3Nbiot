@@ -186,6 +186,12 @@ LteUeNetDevice::GetNas (void) const
   return m_nas;
 }
 
+Ptr<LteControlMessage>
+LteUeNetDevice::GetCtrMsg (void) const{
+  NS_LOG_FUNCTION (this);
+  return lalala;
+}
+
 uint64_t
 LteUeNetDevice::GetImsi () const
 {

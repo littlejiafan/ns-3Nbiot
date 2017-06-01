@@ -111,9 +111,7 @@ public:
 
 
 
-  uint16_t GetIndex () const{
-	  return m_index;
-  }
+  uint16_t GetIndex () const;
 
 
 
@@ -227,7 +225,7 @@ private:
 
 
 
-  uint16_t m_index=9;
+  uint16_t m_index;
 
 
 

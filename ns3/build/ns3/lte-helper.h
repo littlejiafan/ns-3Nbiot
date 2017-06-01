@@ -370,6 +370,7 @@ public:
 
   void NbAttach (Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice);
 
+  void SendCtrMsg(Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice);
 
 
 

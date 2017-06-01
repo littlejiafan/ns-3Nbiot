@@ -405,49 +405,20 @@ private:
 class NetDevice : public Object
 {
 private:
-	uint16_t myAbbility;
-
-	struct Delivery{
-		bool ctrSupport;
-		uint16_t cindex;
-	};
-
-	Delivery delivery;
+	int index;
 public:
-
   /**
    * \brief Get the type ID.
    * \return the object TypeId
    */
+	void setIndex(int a){
+		index=a;
+	}
+	int getIndex(){
+		return index;
+	}
   static TypeId GetTypeId (void);
   virtual ~NetDevice();
-
-
-
-  //big change
-  void setIndex(uint16_t index){
-	  myAbbility=index;
-  }
-
-  uint16_t getIndex(){
-	  return myAbbility;
-  }
-
-
-
-  //big change
-  void setDelivery(bool ctrs,uint16_t index){
-	  delivery.ctrSupport=ctrs;
-	  delivery.cindex=index;
-  }
-
-  Delivery getDelivery(){
-	  return delivery;
-  }
-
-
-
-
 
   /**
    * \param index ifIndex of the device 

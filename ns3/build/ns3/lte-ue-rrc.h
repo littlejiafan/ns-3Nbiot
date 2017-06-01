@@ -308,7 +308,7 @@ private:
   void DoForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn);
 
 
-  void NbDoForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx,Ptr<NetDevice> ueDevice);
+  void NbDoForceCampedOnEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx);
 
 
 
@@ -590,11 +590,6 @@ private:
 
   uint16_t m_dlEarfcn;  /**< Downlink carrier frequency. */
   uint16_t m_ulEarfcn;  /**< Uplink carrier frequency. */
-
-
-
-
-
 
 
 

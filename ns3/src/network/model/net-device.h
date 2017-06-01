@@ -404,11 +404,19 @@ private:
  */
 class NetDevice : public Object
 {
+private:
+	int index;
 public:
   /**
    * \brief Get the type ID.
    * \return the object TypeId
    */
+	void setIndex(int a){
+		index=a;
+	}
+	int getIndex(){
+		return index;
+	}
   static TypeId GetTypeId (void);
   virtual ~NetDevice();
 

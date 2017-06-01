@@ -21,6 +21,7 @@
 
 
 #include "lte-helper.h"
+#include <ns3/lte-phy.h>
 #include <ns3/string.h>
 #include <ns3/log.h>
 #include <ns3/abort.h>
@@ -61,6 +62,7 @@
 #include <ns3/buildings-propagation-loss-model.h>
 #include <ns3/lte-spectrum-value-helper.h>
 #include <ns3/epc-x2.h>
+
 
 namespace ns3 {
 
@@ -805,7 +807,7 @@ LteHelper::NbAttach (Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice)
 
   Ptr<EpcUeNas> ueNas = ueLteDevice->GetNas ();
   ueDevice->setIndex(3);
-  enbDevice->getIndex()=ueDevice->getIndex();
+  enbDevice->setIndex(ueDevice->getIndex());
   ueNas->NbConnect (enbLteDevice->GetCellId (), enbLteDevice->GetDlEarfcn (),enbLteDevice->GetIndex());
   //我在这里进行了一次奇妙的赋值，把enb里的一个值辅导了ue的phy里，现在我们要做的是提取这个值
 
@@ -823,7 +825,23 @@ LteHelper::NbAttach (Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice)
     }
 }
 
-
+void
+LteHelper::SendCtrMsg(Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice){
+	NS_LOG_FUNCTION(this);
+	Ptr<LteUeNetDevice> ueLteDevice = ueDevice->GetObject<LteUeNetDevice> ();
+	Ptr<LteEnbNetDevice> enbLteDevice = enbDevice->GetObject<LteEnbNetDevice> ();
+	  Ptr<LteUePhy> uePhy = ueLteDevice->GetPhy ();
+	  uePhy-> DoSendLteControlMessage(ueLteDevice->GetCtrMsg());//其实这里的发送是给msg赋值，push-back
+	  //到此为止完成了ueDevice的物理层对controlmsg的发送，接下来要写eNb对于其的接受
+	  Ptr<LteEnbPhy> enbPhy=enbLteDevice->GetPhy();
+	 std::list<Ptr<LteControlMessage>> msg=enbPhy->GetControlMessages();
+	   //从list第一个iterator开始
+	    while(!msg.empty())
+	        {
+	             enbPhy->ReceiveLteControlMessage( msg.front());
+	             msg.pop_front();
+	        }
+}
 
 
 

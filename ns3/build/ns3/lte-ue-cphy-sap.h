@@ -106,7 +106,7 @@ public:
 
 
 
-  virtual void NbSynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx,Ptr<NetDevice> ueDevice) = 0;
+  virtual void NbSynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx) = 0;
 
 
 
@@ -239,12 +239,6 @@ public:
   virtual void StartCellSearch (uint16_t dlEarfcn);
   virtual void SynchronizeWithEnb (uint16_t cellId);
   virtual void SynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn);
-
-
-  virtual void NbSynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx);
-
-
-
   virtual void SetDlBandwidth (uint8_t dlBandwidth);
   virtual void ConfigureUplink (uint16_t ulEarfcn, uint8_t ulBandwidth);
   virtual void ConfigureReferenceSignalPower (int8_t referenceSignalPower);
@@ -296,23 +290,6 @@ MemberLteUeCphySapProvider<C>::SynchronizeWithEnb (uint16_t cellId, uint16_t dlE
 {
   m_owner->DoSynchronizeWithEnb (cellId, dlEarfcn);
 }
-
-
-
-
-
-
-template <class C>
-void
-MemberLteUeCphySapProvider<C>::NbSynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx)
-{
-  m_owner->NbDoSynchronizeWithEnb (cellId, dlEarfcn,indexx);//go to 1242 in lte-ue-phy
-}
-
-
-
-
-
 
 template <class C>
 void

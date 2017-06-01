@@ -1,16 +1,16 @@
-# project ns (3.26) configured on Mon Dec  5 21:10:44 2016 by
+# project ns (3.26) configured on Thu Jun  1 11:15:09 2017 by
 # waf 1.8.19 (abi 98, python 2070cf0 on linux2)
-# using ./waf -d debug --enable-examples --enable-tests configure
+# using ./waf configure
 #
 ----------------------------------------
 Setting top to
-/home/fannn/workspace/ns3
+/home/fannn/learngit/ns3
 ----------------------------------------
 Setting out to
-/home/fannn/workspace/ns3/build
+/home/fannn/learngit/ns3/build
 ----------------------------------------
 Checking for 'gcc' (C compiler)
-find program=['gcc', 'cc'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CC' -> ['/usr/bin/gcc']
+find program=['gcc', 'cc'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='CC' -> ['/usr/bin/gcc']
 ['/usr/bin/gcc', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -261,14 +261,14 @@ out: #define __SSP_STRONG__ 3
 #define __ATOMIC_ACQ_REL 4
 #define __ATOMIC_RELEASE 3
 
-find program=['ar'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='AR' -> ['/usr/bin/ar']
 /usr/bin/gcc
 ----------------------------------------
 Checking for cc version
 5.4.0
 ----------------------------------------
 Checking for 'g++' (C++ compiler)
-find program=['g++', 'c++'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CXX' -> ['/usr/bin/g++']
+find program=['g++', 'c++'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='CXX' -> ['/usr/bin/g++']
 ['/usr/bin/g++', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -526,14 +526,14 @@ Checking for compilation flag -Wl,--soname=foo support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_06294d39033aa4af30c8853bcab54fee/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_06294d39033aa4af30c8853bcab54fee/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking for program 'python'
 /usr/bin/python
-find program=['python'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
+find program=['python'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='PYTHON' -> ['/usr/bin/python']
 ['/usr/bin/python', '-c', 'import imp;print(imp.get_tag())']
 err: Traceback (most recent call last):
   File "<string>", line 1, in <module>
@@ -600,7 +600,7 @@ LDVERSION = ''
 ------------------------------------------------------
 python-config
 /usr/bin/python-config
-find program=['/usr/bin/python-config', 'python2.7-config', 'python-config-2.7', 'python2.7m-config'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON_CONFIG' -> ['/usr/bin/python-config']
+find program=['/usr/bin/python-config', 'python2.7-config', 'python-config-2.7', 'python2.7m-config'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='PYTHON_CONFIG' -> ['/usr/bin/python-config']
 ------------------------------------------------------------------
 Asking python-config for pyembed '--cflags --libs --ldflags' flags
 ['/usr/bin/python-config', '--cflags', '--libs', '--ldflags']
@@ -631,12 +631,12 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3d0b43c5d523379f49777ae39bb7d7ef/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_a4ae8ef9462d34fa519cd8eba18eaeb2/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_3d0b43c5d523379f49777ae39bb7d7ef/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_3d0b43c5d523379f49777ae39bb7d7ef/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_a4ae8ef9462d34fa519cd8eba18eaeb2/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_a4ae8ef9462d34fa519cd8eba18eaeb2/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_3d0b43c5d523379f49777ae39bb7d7ef/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm']
+['/usr/bin/g++', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_a4ae8ef9462d34fa519cd8eba18eaeb2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm']
 yes
 ------------------------------------------------------------------
 Asking python-config for pyext '--cflags --libs --ldflags' flags
@@ -668,30 +668,30 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_4d4d408b7a507f78e4a086728d9a2a3f/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_d09e421152751caffd8c1fc7cebfa7d1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fPIC', '-fno-strict-aliasing', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_4d4d408b7a507f78e4a086728d9a2a3f/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_4d4d408b7a507f78e4a086728d9a2a3f/testbuild/testprog.so[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fPIC', '-fno-strict-aliasing', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d09e421152751caffd8c1fc7cebfa7d1/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_d09e421152751caffd8c1fc7cebfa7d1/testbuild/testprog.so[0m
 
-['/usr/bin/g++', '-shared', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_4d4d408b7a507f78e4a086728d9a2a3f/testbuild/testprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm']
+['/usr/bin/g++', '-shared', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d09e421152751caffd8c1fc7cebfa7d1/testbuild/testprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm']
 yes
 ------------------------------------------------------------------
 Checking for compilation flag -fvisibility=hidden support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_06294d39033aa4af30c8853bcab54fee/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_06294d39033aa4af30c8853bcab54fee/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-array-bounds support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_06294d39033aa4af30c8853bcab54fee/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_06294d39033aa4af30c8853bcab54fee/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for pybindgen location
@@ -704,7 +704,7 @@ err: Traceback (most recent call last):
 ImportError: No module named pybindgen
 
 not found
-from /home/fannn/workspace/ns3/bindings/python: Could not find the python module 'pybindgen'
+from /home/fannn/learngit/ns3/bindings/python: Could not find the python module 'pybindgen'
 ------------------------------------------------------------------
 Checking boost includes
 1_58
@@ -746,12 +746,12 @@ Checking for boost linkage
 int main() { boost::system::error_code c; }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e5dc4d91bdb3a43d420ab2774d8c45de/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_12fc43a3c0c8d3b42b1dbdd56b326817/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-I/usr/include', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e5dc4d91bdb3a43d420ab2774d8c45de/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e5dc4d91bdb3a43d420ab2774d8c45de/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-I/usr/include', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_12fc43a3c0c8d3b42b1dbdd56b326817/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_12fc43a3c0c8d3b42b1dbdd56b326817/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e5dc4d91bdb3a43d420ab2774d8c45de/testbuild/testprog', '-Wl,-Bstatic', '-L/usr/lib/x86_64-linux-gnu', '-Wl,-Bdynamic', '-L/usr/lib/x86_64-linux-gnu', '-lboost_system', '-lboost_signals', '-lboost_filesystem']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_12fc43a3c0c8d3b42b1dbdd56b326817/testbuild/testprog', '-Wl,-Bstatic', '-L/usr/lib/x86_64-linux-gnu', '-Wl,-Bdynamic', '-L/usr/lib/x86_64-linux-gnu', '-lboost_system', '-lboost_signals', '-lboost_filesystem']
 ok
 ------------------------------------------------------------------
 Checking for click location
@@ -759,7 +759,7 @@ not found
 ------------------------------------------------------------------
 Checking for program 'pkg-config'
 /usr/bin/pkg-config
-find program=['pkg-config'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
+find program=['pkg-config'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
 ------------------------------------------------------------------
 Checking for 'gtk+-2.0' >= 2.12
 ['/usr/bin/pkg-config', '--atleast-version=2.12', 'gtk+-2.0']
@@ -787,9 +787,9 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_0b27b905eeb6eb8249037e1f3e8cc67a/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_e17f8ad49e6b48affb7b3eda9a344df8/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_0b27b905eeb6eb8249037e1f3e8cc67a/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_e17f8ad49e6b48affb7b3eda9a344df8/testbuild/test.cpp.1.o']
 err: ../test.cpp: In function ‘int main(int, char**)’:
 ../test.cpp:5:7: error: ‘uint128_t’ was not declared in this scope
   if ((uint128_t *) 0) return 0;
@@ -804,18 +804,18 @@ err: ../test.cpp: In function ‘int main(int, char**)’:
   if (sizeof (uint128_t)) return 0;
               ^
 
-from /home/fannn/workspace/ns3/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/fannn/workspace/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
+from /home/fannn/learngit/ns3/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/fannn/learngit/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/fannn/workspace/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
+  File "/home/fannn/learngit/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139977585677072: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_0b27b905eeb6eb8249037e1f3e8cc67a/testbuild/test.cpp.1.o']
+	{task 140031662509712: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_e17f8ad49e6b48affb7b3eda9a344df8/testbuild/test.cpp.1.o']
 
 not found
-from /home/fannn/workspace/ns3/src/core: The configuration failed
+from /home/fannn/learngit/ns3/src/core: The configuration failed
 ------------------------------------------------------------------
 Checking for type __uint128_t
 ==>
@@ -829,12 +829,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_45e905ac8cb02239b2005654fc7f2a35/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_41bd10828345b52a5c4905aa215418f7/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_45e905ac8cb02239b2005654fc7f2a35/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_45e905ac8cb02239b2005654fc7f2a35/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_41bd10828345b52a5c4905aa215418f7/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_41bd10828345b52a5c4905aa215418f7/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_45e905ac8cb02239b2005654fc7f2a35/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_41bd10828345b52a5c4905aa215418f7/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking high precision implementation
@@ -850,12 +850,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header inttypes.h
@@ -868,12 +868,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_d372886476029887945c1a1cf0730551/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d372886476029887945c1a1cf0730551/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_d372886476029887945c1a1cf0730551/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d372886476029887945c1a1cf0730551/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -886,24 +886,24 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_ed8cf4d9fcb3831d83bf02a0846090f2/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_823a4ca791534f8b687606d45ffbd088/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_ed8cf4d9fcb3831d83bf02a0846090f2/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_823a4ca791534f8b687606d45ffbd088/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:26: fatal error: sys/inttypes.h: No such file or directory
 compilation terminated.
 
-from /home/fannn/workspace/ns3/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/fannn/workspace/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
+from /home/fannn/learngit/ns3/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/fannn/learngit/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/fannn/workspace/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
+  File "/home/fannn/learngit/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139977585791504: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_ed8cf4d9fcb3831d83bf02a0846090f2/testbuild/test.cpp.1.o']
+	{task 140031662267216: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_823a4ca791534f8b687606d45ffbd088/testbuild/test.cpp.1.o']
 
 not found
-from /home/fannn/workspace/ns3/src/core: The configuration failed
+from /home/fannn/learngit/ns3/src/core: The configuration failed
 ------------------------------------------------------------------
 Checking for header sys/types.h
 ==>
@@ -915,12 +915,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e9b2396643d1cdd1318800a94352e495/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_16049213f14768b7ea779ad27b889051/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e9b2396643d1cdd1318800a94352e495/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e9b2396643d1cdd1318800a94352e495/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_16049213f14768b7ea779ad27b889051/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_16049213f14768b7ea779ad27b889051/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e9b2396643d1cdd1318800a94352e495/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_16049213f14768b7ea779ad27b889051/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header sys/stat.h
@@ -933,12 +933,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_a1af85a147bc3ce5095428307e4d16c8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_8b83eddb0f89e5feca1509b813d4fbb9/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_a1af85a147bc3ce5095428307e4d16c8/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_a1af85a147bc3ce5095428307e4d16c8/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_8b83eddb0f89e5feca1509b813d4fbb9/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_8b83eddb0f89e5feca1509b813d4fbb9/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_a1af85a147bc3ce5095428307e4d16c8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_8b83eddb0f89e5feca1509b813d4fbb9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header dirent.h
@@ -951,12 +951,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_ac45a0ccbb16604fec1e354c00d7baa4/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_64c7afc8d7ebbe54cb418cf84df94a32/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_ac45a0ccbb16604fec1e354c00d7baa4/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_ac45a0ccbb16604fec1e354c00d7baa4/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_64c7afc8d7ebbe54cb418cf84df94a32/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_64c7afc8d7ebbe54cb418cf84df94a32/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_ac45a0ccbb16604fec1e354c00d7baa4/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_64c7afc8d7ebbe54cb418cf84df94a32/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header stdlib.h
@@ -969,12 +969,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e964f0454eb6c1341c7d777d5728dd00/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_aba721f24fd3bb989aa8be6ca4d9b1d9/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e964f0454eb6c1341c7d777d5728dd00/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e964f0454eb6c1341c7d777d5728dd00/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_aba721f24fd3bb989aa8be6ca4d9b1d9/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_aba721f24fd3bb989aa8be6ca4d9b1d9/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e964f0454eb6c1341c7d777d5728dd00/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_aba721f24fd3bb989aa8be6ca4d9b1d9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header signal.h
@@ -987,12 +987,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_6f551d80f934937c1d511638d755ee82/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_99e1d38dbfc60788d189dc13b2b615fe/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_6f551d80f934937c1d511638d755ee82/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_6f551d80f934937c1d511638d755ee82/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_99e1d38dbfc60788d189dc13b2b615fe/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_99e1d38dbfc60788d189dc13b2b615fe/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_6f551d80f934937c1d511638d755ee82/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_99e1d38dbfc60788d189dc13b2b615fe/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header pthread.h
@@ -1007,12 +1007,12 @@ int main ()
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_2baf6bbf6bec2656810eac98c949eedc/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_7106e564485f097d3244ca4e3362603d/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_2baf6bbf6bec2656810eac98c949eedc/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_2baf6bbf6bec2656810eac98c949eedc/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_7106e564485f097d3244ca4e3362603d/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_7106e564485f097d3244ca4e3362603d/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_2baf6bbf6bec2656810eac98c949eedc/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_7106e564485f097d3244ca4e3362603d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header stdint.h
@@ -1025,12 +1025,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e6b52debb4946411bf40df61d3fdbbd8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_2087ac3dbb1ca11fe2471ef810f01c00/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header inttypes.h
@@ -1043,12 +1043,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_d372886476029887945c1a1cf0730551/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d372886476029887945c1a1cf0730551/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_d372886476029887945c1a1cf0730551/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_e5c76ba4e94e5074f2c697f5f0edce85/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d372886476029887945c1a1cf0730551/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -1061,24 +1061,24 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_ed8cf4d9fcb3831d83bf02a0846090f2/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_823a4ca791534f8b687606d45ffbd088/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_ed8cf4d9fcb3831d83bf02a0846090f2/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_823a4ca791534f8b687606d45ffbd088/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:26: fatal error: sys/inttypes.h: No such file or directory
 compilation terminated.
 
-from /home/fannn/workspace/ns3/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/fannn/workspace/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
+from /home/fannn/learngit/ns3/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/fannn/learngit/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/fannn/workspace/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
+  File "/home/fannn/learngit/ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139977585679760: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_ed8cf4d9fcb3831d83bf02a0846090f2/testbuild/test.cpp.1.o']
+	{task 140031662509456: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_823a4ca791534f8b687606d45ffbd088/testbuild/test.cpp.1.o']
 
 not found
-from /home/fannn/workspace/ns3/src/core: The configuration failed
+from /home/fannn/learngit/ns3/src/core: The configuration failed
 ------------------------------------------------------------------
 Checking for library rt
 ==>
@@ -1089,12 +1089,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_890577db96b38cf3bc4123629566483c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_ad170d57526963b7183012a8e9151aa3/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_890577db96b38cf3bc4123629566483c/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_890577db96b38cf3bc4123629566483c/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_ad170d57526963b7183012a8e9151aa3/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_ad170d57526963b7183012a8e9151aa3/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_890577db96b38cf3bc4123629566483c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_ad170d57526963b7183012a8e9151aa3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
 yes
 ------------------------------------------------------------------
 Checking for header sys/ioctl.h
@@ -1107,12 +1107,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_07ed84e930cc2badcaa36f0393505c03/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_c12a345fe04b90d98925929616e705cd/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_07ed84e930cc2badcaa36f0393505c03/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_07ed84e930cc2badcaa36f0393505c03/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_c12a345fe04b90d98925929616e705cd/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_c12a345fe04b90d98925929616e705cd/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_07ed84e930cc2badcaa36f0393505c03/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_c12a345fe04b90d98925929616e705cd/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header net/if.h
@@ -1125,12 +1125,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_5917c54ba02810275d739d581ff2f845/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_75053e1102a37606a28a5d3a41724e0f/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_5917c54ba02810275d739d581ff2f845/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_5917c54ba02810275d739d581ff2f845/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_75053e1102a37606a28a5d3a41724e0f/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_75053e1102a37606a28a5d3a41724e0f/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_5917c54ba02810275d739d581ff2f845/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_75053e1102a37606a28a5d3a41724e0f/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header net/ethernet.h
@@ -1143,12 +1143,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_d07a638c799ef6fc88b806823df2eda9/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_13439cffd27417a4e3449e8ee531e076/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_d07a638c799ef6fc88b806823df2eda9/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_d07a638c799ef6fc88b806823df2eda9/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_13439cffd27417a4e3449e8ee531e076/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_13439cffd27417a4e3449e8ee531e076/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_d07a638c799ef6fc88b806823df2eda9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_13439cffd27417a4e3449e8ee531e076/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header linux/if_tun.h
@@ -1161,12 +1161,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_62b34ddb053a31031341b9bc29ab2524/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_62b34ddb053a31031341b9bc29ab2524/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_62b34ddb053a31031341b9bc29ab2524/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_62b34ddb053a31031341b9bc29ab2524/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header netpacket/packet.h
@@ -1179,12 +1179,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3d81fb25ba14973df89348cc29ca4111/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_0768f720294ba8fcd11f604e8ed86711/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_3d81fb25ba14973df89348cc29ca4111/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_3d81fb25ba14973df89348cc29ca4111/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_0768f720294ba8fcd11f604e8ed86711/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_0768f720294ba8fcd11f604e8ed86711/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_3d81fb25ba14973df89348cc29ca4111/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_0768f720294ba8fcd11f604e8ed86711/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for NSC location
@@ -1209,21 +1209,21 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_62b34ddb053a31031341b9bc29ab2524/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_62b34ddb053a31031341b9bc29ab2524/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_62b34ddb053a31031341b9bc29ab2524/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/workspace/ns3/build/.conf_check_8d86d81a2f1e7c261d9c3aa8be72e6a3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/fannn/learngit/ns3/build/.conf_check_62b34ddb053a31031341b9bc29ab2524/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for program 'sudo'
 /usr/bin/sudo
-find program=['sudo'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='SUDO' -> ['/usr/bin/sudo']
+find program=['sudo'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='SUDO' -> ['/usr/bin/sudo']
 ------------------------------------------------------------------
 Checking for program 'valgrind'
 /usr/bin/valgrind
-find program=['valgrind'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='VALGRIND' -> ['/usr/bin/valgrind']
+find program=['valgrind'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='VALGRIND' -> ['/usr/bin/valgrind']
 ------------------------------------------------------------------
 Checking for 'gsl'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'gsl']
@@ -1233,63 +1233,63 @@ yes
 ------------------------------------------------------------------
 python-config
 not found
-find program=['libgcrypt-config'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='LIBGCRYPT_CONFIG' -> None
-from /home/fannn/workspace/ns3: Could not find the program ['libgcrypt-config']
+find program=['libgcrypt-config'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='LIBGCRYPT_CONFIG' -> None
+from /home/fannn/learngit/ns3: Could not find the program ['libgcrypt-config']
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-error=deprecated-d... support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_06294d39033aa4af30c8853bcab54fee/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_06294d39033aa4af30c8853bcab54fee/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-error=deprecated-d... support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_d64c28b9bcad6a6a880f8dce6f415a7b/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_d748c89eb8d42085e662276ffaec56cf/test.c[0m
 
-['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_d64c28b9bcad6a6a880f8dce6f415a7b/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d748c89eb8d42085e662276ffaec56cf/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_06294d39033aa4af30c8853bcab54fee/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_06294d39033aa4af30c8853bcab54fee/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_d64c28b9bcad6a6a880f8dce6f415a7b/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_d748c89eb8d42085e662276ffaec56cf/test.c[0m
 
-['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_d64c28b9bcad6a6a880f8dce6f415a7b/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d748c89eb8d42085e662276ffaec56cf/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_06294d39033aa4af30c8853bcab54fee/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_06294d39033aa4af30c8853bcab54fee/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_5d4e8a0e5b704ea1acdbe7e0d8d880ab/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_d64c28b9bcad6a6a880f8dce6f415a7b/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_d748c89eb8d42085e662276ffaec56cf/test.c[0m
 
-['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/fannn/workspace/ns3/build/.conf_check_d64c28b9bcad6a6a880f8dce6f415a7b/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/fannn/learngit/ns3/build/.conf_check_d748c89eb8d42085e662276ffaec56cf/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for program 'doxygen'
 /usr/bin/doxygen
-find program=['doxygen'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='DOXYGEN' -> ['/usr/bin/doxygen']
+find program=['doxygen'] paths=['/home/fannn/bin', '/home/fannn/.local/bin', '/opt/apache-maven-3.5.0/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin'] var='DOXYGEN' -> ['/usr/bin/doxygen']

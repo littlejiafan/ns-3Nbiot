@@ -198,7 +198,7 @@ public:
   Ptr<DlCqiLteControlMessage> CreateDlCqiFeedbackMessage (const SpectrumValue& sinr);
 
 
-
+  void DoSendLteControlMessage (Ptr<LteControlMessage> msg);
   // inherited from LtePhy
   virtual void GenerateCtrlCqiReport (const SpectrumValue& sinr);
   virtual void GenerateDataCqiReport (const SpectrumValue& sinr);
@@ -327,7 +327,7 @@ private:
   void DoSynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn);
 
 
-  void NbDoSynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx,Ptr<NetDevice> ueDevice);
+  void NbDoSynchronizeWithEnb (uint16_t cellId, uint16_t dlEarfcn,uint16_t indexx);
 
 
 
@@ -341,7 +341,6 @@ private:
 
   // UE PHY SAP methods 
   virtual void DoSendMacPdu (Ptr<Packet> p);
-  virtual void DoSendLteControlMessage (Ptr<LteControlMessage> msg);
   virtual void DoSendRachPreamble (uint32_t prachId, uint32_t raRnti);
 
   /// A list of sub channels to use in TX.
