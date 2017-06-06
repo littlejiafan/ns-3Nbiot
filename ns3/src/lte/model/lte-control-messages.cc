@@ -144,6 +144,34 @@ DlCqiLteControlMessage::GetDlCqi (void)
 
 // ----------------------------------------------------------------------------------------------------------
 
+PduLteControlMessage::PduLteControlMessage (void)
+{
+  SetMessageType (LteControlMessage::PDU1);
+}
+
+
+PduLteControlMessage::~PduLteControlMessage (void)
+{
+
+}
+
+void
+PduLteControlMessage::SetPdu(PduListElement_s pdu)
+{
+  m_pdu=pdu;
+}
+
+
+PduListElement_s
+PduLteControlMessage::GetPdu (void)
+{
+  return m_pdu;
+}
+
+
+
+// ----------------------------------------------------------------------------------------------------------
+
 
 BsrLteControlMessage::BsrLteControlMessage (void)
 {

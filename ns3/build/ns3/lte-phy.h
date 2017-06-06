@@ -273,18 +273,7 @@ protected:
    * Specified by the upper layer through CPHY SAP.
    */
   uint16_t m_dlEarfcn;
-
-
-
-
-
-
   uint16_t m_index;
-
-
-
-
-
   /**
    * The uplink carrier frequency.
    * Specified by the upper layer through CPHY SAP.

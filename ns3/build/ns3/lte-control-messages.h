@@ -61,6 +61,9 @@ public:
     RAR, // Random Access Response
     MIB, // Master Information Block
     SIB1, // System Information Block Type 1
+
+	PDU1,//我在之后新加入代表pdu包的参量
+	PDU2
   };
 
   LteControlMessage (void);
@@ -172,6 +175,17 @@ private:
 };
 
 
+// ---------------------------------------------------------------------------
+class PduLteControlMessage: public LteControlMessage{
+public:
+	PduLteControlMessage(void);
+	virtual ~PduLteControlMessage (void);
+	void SetPdu(PduListElement_s pdu);
+	PduListElement_s GetPdu(void);
+
+private:
+	PduListElement_s m_pdu;
+};
 // ---------------------------------------------------------------------------
 
 /**

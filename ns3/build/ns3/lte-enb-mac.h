@@ -156,6 +156,7 @@ private:
   * \param msg the DL CQI message
   */
   void ReceiveDlCqiLteControlMessage  (Ptr<DlCqiLteControlMessage> msg);
+  void ReceivePduLteControlMessage  (Ptr<PduLteControlMessage> msg);
 
   void DoReceiveLteControlMessage (Ptr<LteControlMessage> msg);
 
@@ -215,6 +216,8 @@ private:
   std::map <uint16_t, std::map<uint8_t, LteMacSapUser*> > m_rlcAttached;
 
   std::vector <CqiListElement_s> m_dlCqiReceived; // DL-CQI received
+
+  std::vector <PduListElement_s> m_PduReceived; // Pdu received
   std::vector <FfMacSchedSapProvider::SchedUlCqiInfoReqParameters> m_ulCqiReceived; // UL-CQI received
   std::vector <MacCeListElement_s> m_ulCeReceived; // CE received (BSR up to now)
 

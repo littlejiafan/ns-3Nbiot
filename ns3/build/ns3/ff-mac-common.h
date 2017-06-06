@@ -148,6 +148,10 @@ struct UlDciListElement_s
   int8_t    m_pdcchPowerOffset;
 };
 
+struct PduListElement_s{
+	uint8_t m_woshigeshu;
+	bool m_woshishadiao;
+};
 /**
 * \brief Base class for storing the values of vendor specific parameters
 */

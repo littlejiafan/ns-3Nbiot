@@ -607,6 +607,10 @@ LteEnbMac::DoReceiveLteControlMessage  (Ptr<LteControlMessage> msg)
       Ptr<DlCqiLteControlMessage> dlcqi = DynamicCast<DlCqiLteControlMessage> (msg);
       ReceiveDlCqiLteControlMessage (dlcqi);
     }
+  else if (msg->GetMessageType()==LteControlMessage::PDU1){
+	  Ptr<PduLteControlMessage> ltePdu= DynamicCast<PduLteControlMessage> (msg);
+	  ReceivePduLteControlMessage (ltePdu);
+  }
   else if (msg->GetMessageType () == LteControlMessage::BSR)
     {
       Ptr<BsrLteControlMessage> bsr = DynamicCast<BsrLteControlMessage> (msg);
@@ -655,6 +659,18 @@ LteEnbMac::ReceiveDlCqiLteControlMessage  (Ptr<DlCqiLteControlMessage> msg)
   NS_LOG_LOGIC (this << "Enb Received DL-CQI rnti" << dlcqi.m_rnti);
   NS_ASSERT (dlcqi.m_rnti != 0);
   m_dlCqiReceived.push_back (dlcqi);
+
+}
+
+void
+LteEnbMac::ReceivePduLteControlMessage  (Ptr<PduLteControlMessage> msg)
+{
+  NS_LOG_FUNCTION (this << msg);
+
+  PduListElement_s pdu = msg->GetPdu();
+  NS_LOG_LOGIC (this << "Enb Received Pdu Message" << pdu.m_woshigeshu);
+  NS_ASSERT (pdu.m_woshigeshu != 0);
+  m_PduReceived.push_back (pdu);
 
 }
 
