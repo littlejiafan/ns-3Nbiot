@@ -173,7 +173,7 @@ public:
  *
  * This is the MAC SAP User, i.e., the part of the SAP that contains the RRC methods called by the MAC
  */
-class LteEnbCmacSapUser
+class LteEnbCmacSapUser //增加几个值，让他可以传输更多的控制信令
 {
 public:
   virtual ~LteEnbCmacSapUser ();
@@ -197,6 +197,8 @@ public:
   /**
    * \brief Parameters for [re]configuring the UE 
    */
+
+
   struct UeConfig
   {
     /**
@@ -207,7 +209,7 @@ public:
      * Transmission mode [1..7] (i.e., SISO, MIMO, etc.)
      */
     uint8_t   m_transmissionMode;
-  };
+	};
 
   /** 
    * Notify the RRC of a UE config updated requested by the MAC (normally, by the scheduler)
@@ -215,6 +217,17 @@ public:
    * \param params 
    */
   virtual void RrcConfigurationUpdateInd (UeConfig params) = 0;
+	 std::vector<PduListElement_s>& getCmacPduReceived() const {
+		 return m_cmacPduReceived;
+		}
+
+		void setCmacPduReceived(
+				const std::vector<PduListElement_s>& cmacPduReceived) {
+			m_cmacPduReceived = cmacPduReceived;
+		}
+
+private:
+  std::vector <PduListElement_s> m_cmacPduReceived; // Pdu received
 };
 
 

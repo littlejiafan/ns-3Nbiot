@@ -841,6 +841,10 @@ LteHelper::SendCtrMsg(Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice){
 	             enbPhy->ReceiveLteControlMessage( msg.front());
 	             msg.pop_front();
 	        }
+	    /**
+	     * 至此完成了eNb对于ue发送的控制面信令的接受和解系，按照ly提供的
+	     * 流程，下一步应当是将解析后的所有数据转移到mme里*/
+
 }
 
 

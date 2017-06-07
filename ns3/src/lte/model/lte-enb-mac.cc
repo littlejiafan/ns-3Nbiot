@@ -669,9 +669,10 @@ LteEnbMac::ReceivePduLteControlMessage  (Ptr<PduLteControlMessage> msg)
 
   PduListElement_s pdu = msg->GetPdu();
   NS_LOG_LOGIC (this << "Enb Received Pdu Message" << pdu.m_woshigeshu);
+  std::cout<<"我感受到了来自ue的控制里的pdu"<<std::endl;
   NS_ASSERT (pdu.m_woshigeshu != 0);
   m_PduReceived.push_back (pdu);
-
+  m_cmacSapUser->setCmacPduReceived(m_PduReceived);
 }
 
 
