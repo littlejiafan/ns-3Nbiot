@@ -844,6 +844,14 @@ LteHelper::SendCtrMsg(Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice){
 	    /**
 	     * 至此完成了eNb对于ue发送的控制面信令的接受和解系，按照ly提供的
 	     * 流程，下一步应当是将解析后的所有数据转移到mme里*/
+	    Ptr<LteEnbRrc> enbRrc= enbLteDevice->GetRrc();
+	    enbRrc->ReceiveMacCtrMessage(enbRrc->GetLteEnbCmacSapUser()
+	    		->getCmacPduReceived());
+	    /**感觉这几步无中生有会出tm大事，总之目前算是把pdu存到了EpcEnbS1SapProvider中了
+	     * 在这里我决定让mme能够读取EpcEnbS1SapProveider*/
+
+
+
 
 }
 

@@ -1597,6 +1597,12 @@ LteEnbRrc::GetS1SapUser ()
 }
 
 void
+LteEnbRrc::ReceiveMacCtrMessage(std::vector <PduListElement_s> msg){
+	m_s1SapProvider->setPdu(msg);
+
+}
+
+void
 LteEnbRrc::SetLteEnbCphySapProvider (LteEnbCphySapProvider * s)
 {
   NS_LOG_FUNCTION (this << s);
@@ -2337,6 +2343,8 @@ LteEnbRrc::AddX2Neighbour (uint16_t cellId)
       m_anrSapProvider->AddNeighbourRelation (cellId);
     }
 }
+
+void
 
 void
 LteEnbRrc::SetCsgId (uint32_t csgId, bool csgIndication)

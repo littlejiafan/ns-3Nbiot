@@ -217,7 +217,7 @@ public:
    * \param params 
    */
   virtual void RrcConfigurationUpdateInd (UeConfig params) = 0;
-	 std::vector<PduListElement_s>& getCmacPduReceived() const {
+	 std::vector<PduListElement_s> getCmacPduReceived()  {
 		 return m_cmacPduReceived;
 		}
 

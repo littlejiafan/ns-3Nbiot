@@ -655,6 +655,8 @@ public:
    */
   void SetLteEnbCphySapProvider (LteEnbCphySapProvider * s);
 
+
+  void ReceiveMacCtrMessage(std::vector <PduListElement_s>msg);
   /**
    *
    *
@@ -952,7 +954,6 @@ private:
 
 
 public:
-
   /** 
    * Add a neighbour with an X2 interface
    *
@@ -994,6 +995,8 @@ public:
   void SetCsgId (uint32_t csgId, bool csgIndication);
 
 private:
+
+  std::vector <PduListElement_s> lalala;
 
   /** 
    * Allocate a new SRS configuration index for a new UE. 
