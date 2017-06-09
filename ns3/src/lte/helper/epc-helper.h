@@ -28,6 +28,7 @@
 #include <ns3/data-rate.h>
 #include <ns3/epc-tft.h>
 #include <ns3/eps-bearer.h>
+#include <ns3/epc-enb-s1-sap.h>
 
 namespace ns3 {
 
@@ -113,7 +114,7 @@ public:
 
 
   virtual uint8_t NbActivateEpsBearer (Ptr<NetDevice> ueLteDevice, uint64_t imsi, Ptr<EpcTft> tft, EpsBearer bearer) = 0;
-
+  virtual void NbGotoEpcDoMme();
   /** 
    * 
    * \return a pointer to the node implementing PGW

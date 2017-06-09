@@ -37,9 +37,10 @@ namespace ns3 {
  * 
  */
 class EpcEnbS1SapProvider
-{private:
+{
+private:
 
-	std::vector <PduListElement_s> lalala;
+	std::vector<PduListElement_s> lalala;
 
 public:
 
@@ -89,7 +90,7 @@ public:
   virtual void UeContextRelease (uint16_t rnti) = 0;
 
   void setPdu(std::vector <PduListElement_s> msg){
-	  this->lalala=msg;
+	  lalala=msg;
   }
 
   std::vector <PduListElement_s> getPdu(){

@@ -36,6 +36,7 @@
 #include <ns3/application.h>
 #include <ns3/epc-s1ap-sap.h>
 #include <ns3/epc-s11-sap.h>
+#include <ns3/ff-mac-common.h>
 #include <map>
 
 namespace ns3 {
@@ -51,6 +52,8 @@ class EpcSgwPgwApplication : public Application
 
 public:
 
+
+  std::vector<PduListElement_s> lalala;
   // inherited from Object
   static TypeId GetTypeId (void);
   virtual void DoDispose ();

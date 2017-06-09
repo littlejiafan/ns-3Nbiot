@@ -86,13 +86,14 @@ public:
 
 
   virtual Ptr<Node> GetPgwNode ();
+  virtual void NbGotoEpcDoMme();
   virtual Ipv4InterfaceContainer AssignUeIpv4Address (NetDeviceContainer ueDevices);
   virtual Ipv4Address GetUeDefaultGatewayAddress ();
 
 
 
 private:
-
+  EpcEnbS1SapProvider* m_s1SapProvider;
   /** 
    * helper to assign addresses to UE devices as well as to the TUN device of the SGW/PGW
    */

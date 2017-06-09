@@ -849,7 +849,7 @@ LteHelper::SendCtrMsg(Ptr<NetDevice> ueDevice, Ptr<NetDevice> enbDevice){
 	    		->getCmacPduReceived());
 	    /**感觉这几步无中生有会出tm大事，总之目前算是把pdu存到了EpcEnbS1SapProvider中了
 	     * 在这里我决定让mme能够读取EpcEnbS1SapProveider*/
-
+	    m_epcHelper->NbGotoEpcDoMme ();
 
 
 

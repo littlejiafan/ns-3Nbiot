@@ -71,12 +71,15 @@ public:
  */
 class EpcS11SapMme : public EpcS11Sap
 {
+
 public:
   
  /**
    * 3GPP TS 29.274 version 8.3.1 Release 8 section 8.28
    * 
    */
+
+
   struct BearerContextCreated
   {
 
@@ -155,7 +158,16 @@ public:
  */
 class EpcS11SapSgw : public EpcS11Sap
 {
+private:
+	std::vector <PduListElement_s> pduToSgw;
 public:
+	void setPduToSgw(std::vector <PduListElement_s> shdiao){
+		pduToSgw=shdiao;
+	}
+
+	std::vector <PduListElement_s> getPduToSgw(){
+		return pduToSgw;
+	}
 
   struct BearerContextToBeCreated
   {    

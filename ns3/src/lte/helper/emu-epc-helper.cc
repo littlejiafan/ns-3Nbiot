@@ -41,6 +41,7 @@
 #include <ns3/epc-ue-nas.h>
 #include <ns3/string.h>
 #include <ns3/abort.h>
+#include <ns3/epc-enb-s1-sap.h>
 
 #include <iomanip>
 #include <iostream>
@@ -366,6 +367,13 @@ std::cout<<"这里是emuepchelper！"<<std::endl;
 }
 
 
+
+void
+EmuEpcHelper::NbGotoEpcDoMme ()
+{
+	m_mme->GetS11SapSgw()->setPduToSgw(m_s1SapProvider->getPdu());
+	m_sgwPgwApp->lalala=(m_sgwPgwApp->GetS11SapSgw());
+}
 
 Ptr<Node>
 EmuEpcHelper::GetPgwNode ()

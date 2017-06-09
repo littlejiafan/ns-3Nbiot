@@ -77,6 +77,11 @@ EpcMme::SetS11SapSgw (EpcS11SapSgw * s)
   m_s11SapSgw = s;
 }
 
+EpcS11SapSgw*
+EpcMme::GetS11SapSgw (){
+	return m_s11SapSgw;
+}
+
 EpcS11SapMme* 
 EpcMme::GetS11SapMme ()
 {

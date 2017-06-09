@@ -24,7 +24,8 @@
 #include <ns3/object.h>
 #include <ns3/epc-s1ap-sap.h>
 #include <ns3/epc-s11-sap.h>
-
+#include <ns3/epc-enb-s1-sap.h>
+#include <ns3/ff-mac-common.h>
 #include <map>
 #include <list>
 
@@ -63,7 +64,7 @@ protected:
 public:
 
 
-  /** 
+  /**
    * 
    * \return the MME side of the S1-AP SAP 
    */
@@ -81,6 +82,14 @@ public:
    * \return the MME side of the S11 SAP 
    */
   EpcS11SapMme* GetS11SapMme ();
+
+  EpcS11SapSgw* GetS11SapSgw ();
+
+
+
+
+
+
 
   /** 
    * Add a new ENB to the MME. 
@@ -116,6 +125,7 @@ public:
 private:
 
   // S1-AP SAP MME forwarded methods
+
   void DoInitialUeMessage (uint64_t mmeUeS1Id, uint16_t enbUeS1Id, uint64_t imsi, uint16_t ecgi);
   void DoInitialContextSetupResponse (uint64_t mmeUeS1Id, uint16_t enbUeS1Id, std::list<EpcS1apSapMme::ErabSetupItem> erabSetupList);
   void DoPathSwitchRequest (uint64_t enbUeS1Id, uint64_t mmeUeS1Id, uint16_t cgi, std::list<EpcS1apSapMme::ErabSwitchedInDownlinkItem> erabToBeSwitchedInDownlinkList);
